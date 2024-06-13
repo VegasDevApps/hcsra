@@ -1,0 +1,27 @@
+<form [formGroup]="policyForm" (submit)="submitForm()">
+    <div class="row">
+
+        <div class="col-2 mb-3">
+            <label for="policyNumber" class="form-label">מס פוליסה</label>
+            <input type="text" class="form-control" id="policyNumber" formControlName="policyNumber">
+        </div>
+        <div class="col-2 mb-3">
+            <label for="insuranceAmount" class="form-label">סכום</label>
+            <input type="number" class="form-control" id="insuranceAmount" formControlName="insuranceAmount">
+        </div>
+        <div class="col-2 mb-3">
+            <label for="insuranceAmount" class="form-label">תחילת</label>
+            <input type="date" class="form-control" id="insuranceAmount" formControlName="startDate">
+        </div>
+        <div class="col-2 mb-3">
+            <label for="insuranceAmount" class="form-label">סיום</label>
+            <input type="date" class="form-control" id="insuranceAmount" formControlName="endDate">
+        </div>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-sm btn-success" type="submit" [disabled]="policyForm.invalid">שמירה</button>
+
+            <button type="button" (click)="navigateToDetails()" class="btn btn-sm btn-secondary me-3">חזרה
+                לפרטים</button>
+        </div>
+</form>

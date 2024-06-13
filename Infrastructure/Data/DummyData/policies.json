@@ -1,0 +1,82 @@
+[
+    {
+        "Id": 1,
+        "PolicyNumber": "פוליסה123",
+        "InsuranceAmount": 100000,
+        "StartDate": "2023-01-01",
+        "EndDate": "2024-01-01",
+        "UserId": 1
+    },
+    {
+        "Id": 2,
+        "PolicyNumber": "פוליסה456",
+        "InsuranceAmount": 200000,
+        "StartDate": "2023-02-01",
+        "EndDate": "2024-02-01",
+        "UserId": 1
+    },
+    {
+        "Id": 3,
+        "PolicyNumber": "פוליסה789",
+        "InsuranceAmount": 150000,
+        "StartDate": "2023-03-01",
+        "EndDate": "2024-03-01",
+        "UserId": 2
+    },
+    {
+        "Id": 4,
+        "PolicyNumber": "פוליסה012",
+        "InsuranceAmount": 300000,
+        "StartDate": "2023-04-01",
+        "EndDate": "2024-04-01",
+        "UserId": 3
+    },
+    {
+        "Id": 5,
+        "PolicyNumber": "פוליסה345",
+        "InsuranceAmount": 250000,
+        "StartDate": "2023-05-01",
+        "EndDate": "2024-05-01",
+        "UserId": 3
+    },
+    {
+        "Id": 6,
+        "PolicyNumber": "פוליסה678",
+        "InsuranceAmount": 120000,
+        "StartDate": "2023-06-01",
+        "EndDate": "2024-06-01",
+        "UserId": 4
+    },
+    {
+        "Id": 7,
+        "PolicyNumber": "פוליסה901",
+        "InsuranceAmount": 220000,
+        "StartDate": "2023-07-01",
+        "EndDate": "2024-07-01",
+        "UserId": 4
+    },
+    {
+        "Id": 8,
+        "PolicyNumber": "פוליסה234",
+        "InsuranceAmount": 170000,
+        "StartDate": "2023-08-01",
+        "EndDate": "2024-08-01",
+        "UserId": 5
+    },
+    {
+        "Id": 9,
+        "PolicyNumber": "פוליסה567",
+        "InsuranceAmount": 270000,
+        "StartDate": "2023-09-01",
+        "EndDate": "2024-09-01",
+        "UserId": 6
+    },
+    {
+        "Id": 10,
+        "PolicyNumber": "פוליסה890",
+        "InsuranceAmount": 210000,
+        "StartDate": "2023-10-01",
+        "EndDate": "2024-10-01",
+        "UserId": 6
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "Id": 1,
+        "Name": "יוסי כהן",
+        "Email": "yossi@example.com"
+    },
+    {
+        "Id": 2,
+        "Name": "דנה לוי",
+        "Email": "dana@example.com"
+    },
+    {
+        "Id": 3,
+        "Name": "רון ישראלי",
+        "Email": "ron@example.com"
+    },
+    {
+        "Id": 4,
+        "Name": "שרה כהן",
+        "Email": "sara@example.com"
+    },
+    {
+        "Id": 5,
+        "Name": "משה לוי",
+        "Email": "moshe@example.com"
+    },
+    {
+        "Id": 6,
+        "Name": "יעל ישראלי",
+        "Email": "yael@example.com"
+    }
+]

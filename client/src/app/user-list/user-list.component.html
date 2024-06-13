@@ -1,0 +1,38 @@
+<div class="">
+    <button type="button" [disabled]="editUser" (click)="onNewClick()" class="btn btn-sm btn-success">לקוח חדש</button>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">מס סדורי</th>
+            <th scope="col">שם</th>
+            <th scope="col">מייל</th>
+            <th scope="col">פעולות</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <th scope="row">{{user.id}}</th>
+            <td>
+                <span *ngIf="editUser?.id !== user.id">{{ user.name }}</span>
+                <input *ngIf="editUser?.id === user.id" [(ngModel)]="user.name" />
+            </td>
+            <td>
+                <span *ngIf="editUser?.id !== user.id">{{ user.email }}</span>
+                <input *ngIf="editUser?.id === user.id" [(ngModel)]="user.email" />
+            </td>
+            <td>
+                <ng-container *ngIf="editUser?.id !== user.id">
+                    <button type="button" (click)="switchEdit(user)" class="btn btn-sm btn-info ms-2">שינוי</button>
+                    <button type="button" (click)="onDetailsClick(user.id)" class="btn btn-sm btn-warning ms-2">פרטים</button>
+                    <button type="button" (click)="onDeleteClick(user.id)" class="btn btn-sm btn-danger">מחק</button>
+                </ng-container>
+                <ng-container *ngIf="editUser?.id === user.id">
+                    <button type="button" (click)="onSaveClick()" class="btn btn-sm btn-success ms-2">שמירה</button>
+                    <button type="button" (click)="switchEdit(null)" class="btn btn-sm btn-warning ms-2">ביטול</button>
+                </ng-container>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
