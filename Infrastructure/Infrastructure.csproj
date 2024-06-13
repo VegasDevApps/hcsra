@@ -5,6 +5,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Data\DummyData\**" CopyToOutputDirectory="PreserveNewest" />
     <ProjectReference Include="..\DomainModule\DomainModule.csproj" />
   </ItemGroup>
 

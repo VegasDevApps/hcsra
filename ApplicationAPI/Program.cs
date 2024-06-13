@@ -55,7 +55,12 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
 app.MapControllers();
+
+app.MapFallbackToController("Index", "Fallback");
+
 
 using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
@@ -66,7 +71,6 @@ try
 {
     await appDbContext.Database.MigrateAsync();
     await DummyDataPopulator.Populate(appDbContext);
-    logger.LogInformation("Vegas");
 }
 catch (Exception ex)
 {
